@@ -16,20 +16,33 @@
 
 # Rescale Videos -
 
+# import cv2 as cv
+# capture = cv.VideoCapture('Photos/dog.mp4')
+#
+# def rescale(frame,scale=0.50):
+#     width = int(frame.shape[1]*scale)
+#     height = int(frame.shape[0]*scale)
+#     dimension = (width,height)
+#     return cv.resize(frame,dimension,interpolation=cv.INTER_AREA)
+#
+# while True:
+#     isTrue, frame = capture.read()
+#     frame_resize = rescale(frame)
+#     cv.imshow('New Video', frame_resize)
+#     if cv.waitKey(5) & 0xFF == ord('d'):
+#         break
+# capture.release()
+# capture.destroAllWindows
+
+#Resize Images -
 import cv2 as cv
-capture = cv.VideoCapture('Photos/dog.mp4')
+img = cv.imread('Photos/python.jpg')
 
-def rescale(frame,scale=0.50):
-    width = int(frame.shape[1]*scale)
-    height = int(frame.shape[0]*scale)
-    dimension = (width,height)
-    return cv.resize(frame,dimension,interpolation=cv.INTER_AREA)
+width,height = 700,500
+imgnew = cv.resize(img,(width,height))
 
-while True:
-    isTrue, frame = capture.read()
-    frame_resize = rescale(frame)
-    cv.imshow('Video', frame_resize)
-    if cv.waitKey(5) & 0xFF == ord('d'):
-        break
-capture.release()
-capture.destroAllWindows
+cv.imshow('New',imgnew)
+print(img.shape)
+print(imgnew.shape)
+
+cv.waitKey(0)

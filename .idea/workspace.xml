@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66799e14-ccaf-44df-a530-f33553d56ba3" name="Changes" comment="Read Image and Video">
+    <list default="true" id="66799e14-ccaf-44df-a530-f33553d56ba3" name="Changes" comment="Rescale Videos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
@@ -26,7 +26,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631292110465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rescale Videos">
+      <created>1631293077360</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631293077360</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +126,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Img Read" />
     <MESSAGE value="Read Image and Video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read Image and Video" />
+    <MESSAGE value="Rescale Videos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rescale Videos" />
   </component>
 </project>
