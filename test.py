@@ -47,22 +47,60 @@
 #
 # cv.waitKey(0)
 
-import cv2 as cv
-import numpy as np
+# import cv2 as cv
+# import numpy as np
+#
+# blank = np.zeros((400, 500, 3), dtype='uint8')
+#
+# blank[:] = 0, 0, 0  # B,G,R  format in Python
+# # #use Color Picker from Google to generate HEX code for RGB
+#
+# # this generates a green box in the blue image
+# # creates a similar looking Mercedes Symbol
+# cv.circle(blank, radius=30, center=(250, 200), thickness=2, color=(0, 250, 0))
+# cv.line(blank, (250, 200), (250, 172), thickness=2, color=(0, 0, 250))  # upper
+# cv.line(blank, (250, 200), (272, 218), thickness=2, color=(0, 0, 250))  # right
+# cv.line(blank, (250, 200), (228, 218), thickness=2, color=(0, 0, 250))  # left
+#
+#
+# cv.imshow('Benz', blank)
+#
+# cv.waitKey(0)
 
-blank = np.zeros((400, 500, 3), dtype='uint8')
+# import cv2 as cv
+# import numpy as np
 
-blank[:] = 0, 0, 0  # B,G,R  format in Python
-# #use Color Picker from Google to generate HEX code for RGB
+# # converting an image to grayscale
 
-# this generates a green box in the blue image
-# creates a similar looking Mercedes Symbol
-cv.circle(blank, radius=30, center=(250, 200), thickness=2, color=(0, 250, 0))
-cv.line(blank, (250, 200), (250, 172), thickness=2, color=(0, 0, 250))  # upper
-cv.line(blank, (250, 200), (272, 218), thickness=2, color=(0, 0, 250))  # right
-cv.line(blank, (250, 200), (228, 218), thickness=2, color=(0, 0, 250))  # left
+# img = cv.imread(r'D:/computer-vision/Photos/python.jpg')
+# # cv.imshow('Img', img)
+# gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
+# cv.imshow('Gray',gray)
+# cv.waitKey(0)
 
+# import cv2 as cv
+# import numpy as np
+# # Blur
+# img = cv.imread(r'D:/computer-vision/Photos/python.jpg')
+# #Gaussian Blurring Technique
+# blur = cv.GaussianBlur(img,(41,41),cv.BORDER_DEFAULT) # to increase the blurriness, we need to increase the kernel size
+# cv.imshow('Blur',blur)
+# cv.imshow('Normal',img)
+# cv.waitKey(0)
 
-cv.imshow('Shapes', blank)
+# #Edge cascasde
+# import cv2 as cv
+# import numpy as np
+# img = cv.imread(r'D:/computer-vision/Photos/village.jpg')
+# img2 = cv.imread(r'D:/computer-vision/Photos/village2.jpg')
 
-cv.waitKey(0)
+# width,height = 600,500
+# imgnew = cv.resize(img,(width,height))
+# imgnew2 = cv.resize(img2,(width,height))
+
+# cany = cv.Canny(imgnew,250,250)
+# cany2 = cv.Canny(imgnew2,300,300)
+
+# Hori = np.concatenate((cany,cany2),axis=1)
+# cv.imshow('Horizontal Concatenation',Hori)
+# cv.waitKey(0)
