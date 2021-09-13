@@ -61,6 +61,7 @@ cv.line(blank, (250, 200), (250, 172), thickness=2, color=(0, 0, 250))  # upper
 cv.line(blank, (250, 200), (272, 218), thickness=2, color=(0, 0, 250))  # right
 cv.line(blank, (250, 200), (228, 218), thickness=2, color=(0, 0, 250))  # left
 
+
 cv.imshow('Shapes', blank)
 
 cv.waitKey(0)

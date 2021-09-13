@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66799e14-ccaf-44df-a530-f33553d56ba3" name="Changes" comment="Image Resize">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="66799e14-ccaf-44df-a530-f33553d56ba3" name="Changes" comment="Creative Shapes">
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631295759165</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creative Shapes">
+      <created>1631522483570</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631522483570</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +141,7 @@
     <MESSAGE value="Read Image and Video" />
     <MESSAGE value="Rescale Videos" />
     <MESSAGE value="Image Resize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image Resize" />
+    <MESSAGE value="Creative Shapes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creative Shapes" />
   </component>
 </project>
