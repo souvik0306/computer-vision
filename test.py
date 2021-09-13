@@ -56,6 +56,7 @@ blank[:] = 0, 0, 0  # B,G,R  format in Python
 # #use Color Picker from Google to generate HEX code for RGB
 
 # this generates a green box in the blue image
+# creates a similar looking Mercedes Symbol
 cv.circle(blank, radius=30, center=(250, 200), thickness=2, color=(0, 250, 0))
 cv.line(blank, (250, 200), (250, 172), thickness=2, color=(0, 0, 250))  # upper
 cv.line(blank, (250, 200), (272, 218), thickness=2, color=(0, 0, 250))  # right
