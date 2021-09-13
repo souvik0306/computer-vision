@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66799e14-ccaf-44df-a530-f33553d56ba3" name="Changes" comment="Rescale Videos">
+    <list default="true" id="66799e14-ccaf-44df-a530-f33553d56ba3" name="Changes" comment="Image Resize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631293077360</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Image Resize">
+      <created>1631295759165</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631295759165</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +134,7 @@
     <MESSAGE value="Img Read" />
     <MESSAGE value="Read Image and Video" />
     <MESSAGE value="Rescale Videos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rescale Videos" />
+    <MESSAGE value="Image Resize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Resize" />
   </component>
 </project>
