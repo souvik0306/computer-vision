@@ -104,3 +104,25 @@
 # Hori = np.concatenate((cany,cany2),axis=1)
 # cv.imshow('Horizontal Concatenation',Hori)
 # cv.waitKey(0)
+
+# import cv2 as cv
+# import numpy as np
+# img = cv.imread(r'D:/computer-vision/Photos/village.jpg')
+# img2 = cv.imread(r'D:/computer-vision/Photos/village2.jpg')
+
+# width,height = 600,500
+# imgnew = cv.resize(img,(width,height))
+
+# cany = cv.Canny(imgnew,250,250)
+
+# cv.waitKey(0)
+
+import cv2 as cv
+capture = cv.VideoCapture(0)
+while True:
+    isTrue, frame = capture.read()
+    cv.imshow('Video', frame)
+    if cv.waitKey(5) & 0xFF == ord('d'):  #d is the kill swich here
+        break
+capture.release()
+capture.destroAllWindows
