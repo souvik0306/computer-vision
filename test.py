@@ -151,15 +151,19 @@
 # cv.waitKey(0)
 
 #Taking a video as canny, dilated and blurred
+# import cv2 as cv
+# import numpy as np
+# capture = cv.VideoCapture(0)
+# while True:
+#     isTrue, frame = capture.read()
+#     blur = cv.GaussianBlur(frame,(7,7),cv.BORDER_DEFAULT)
+#     cany = cv.Canny(blur,100,100)
+#     cv.imshow('Video', cany)
+#     if cv.waitKey(5) & 0xFF == ord('d'):  #d is the kill swich here
+#         break
+# capture.release()
+# capture.destroAllWindows
+
+#Face detection
 import cv2 as cv
 import numpy as np
-capture = cv.VideoCapture(0)
-while True:
-    isTrue, frame = capture.read()
-    blur = cv.GaussianBlur(frame,(7,7),cv.BORDER_DEFAULT)
-    cany = cv.Canny(blur,100,100)
-    cv.imshow('Video', cany)
-    if cv.waitKey(5) & 0xFF == ord('d'):  #d is the kill swich here
-        break
-capture.release()
-capture.destroAllWindows
