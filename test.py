@@ -117,11 +117,48 @@
 
 # cv.waitKey(0)
 
+# import cv2 as cv
+# capture = cv.VideoCapture(0)
+# while True:
+#     isTrue, frame = capture.read()
+#     cv.imshow('Video', frame)
+#     if cv.waitKey(5) & 0xFF == ord('d'):  #d is the kill swich here
+#         break
+# capture.release()
+# capture.destroAllWindows
+
+# # Edge cascading on a blurred image
+# import cv2 as cv
+# import numpy as np
+# img = cv.imread(r'D:/computer-vision/Photos/boston.jpg')
+
+# width,height = 600,500
+# imgnew = cv.resize(img,(width,height))
+# blur = cv.GaussianBlur(imgnew,(7,7),cv.BORDER_DEFAULT)
+# cany = cv.Canny(blur,100,100)
+# cv.imshow('Boston',cany)
+# cv.waitKey(0)
+
+#Dialate a image
+# import cv2 as cv
+# import numpy as np
+# img = cv.imread(r'D:/computer-vision/Photos/boston.jpg')
+# width,height = 600,500
+# img = cv.resize(img,(width,height))
+# cany = cv.Canny(img,100,100)
+# dilated = cv.dilate(cany,(50,50),iterations=1)
+# cv.imshow('Boston',dilated)
+# cv.waitKey(0)
+
+#Taking a video as canny, dilated and blurred
 import cv2 as cv
+import numpy as np
 capture = cv.VideoCapture(0)
 while True:
     isTrue, frame = capture.read()
-    cv.imshow('Video', frame)
+    blur = cv.GaussianBlur(frame,(7,7),cv.BORDER_DEFAULT)
+    cany = cv.Canny(blur,100,100)
+    cv.imshow('Video', cany)
     if cv.waitKey(5) & 0xFF == ord('d'):  #d is the kill swich here
         break
 capture.release()
