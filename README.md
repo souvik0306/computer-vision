@@ -8,4 +8,4 @@ For this following repository I have made use of these amazing resources -
 2. OpenCV Official Documentation - [Doc](https://docs.opencv.org/4.5.3/)
 3. Jason's OpenCV Repo - [GitHub](https://github.com/jasmcaus/opencv-course)
 
-The [basics.py](https://github.com/souvik0306/computer-vision/blob/master/basics.py) file
+The [basics.py](souvik0306/computer-vision/basics.py) file
