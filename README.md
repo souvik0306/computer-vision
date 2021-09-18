@@ -1,3 +1,7 @@
 ## computer-vision
 Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos.
 From the perspective of engineering, it seeks to understand and automate tasks that the human visual system can do
+
+For this following repository I have made use of these amazing resources - 
+
+1. OpenCV Course by freeCodeCamp.org - [YouTube](https://www.youtube.com/watch?v=oXlwWbU8l2o&ab_channel=freeCodeCamp.org)
