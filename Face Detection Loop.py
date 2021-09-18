@@ -12,7 +12,11 @@ people = ['Ben Afflek', 'Elton John', 'Jerry Seinfield', 'Madonna', 'Mindy Kalin
 fac_recognizer = cv.face.LBPHFaceRecognizer_create()
 fac_recognizer.read('face_trained.yml')
 
-p = (r'D:\computer-vision\Photos\Faces\val\madonna')
+p = (r'D:\computer-vision\Photos\Faces\val\mindy_kaling')
+# p = (r'D:\computer-vision\Photos\Faces\val\elton_john')
+# p = (r'D:\computer-vision\Photos\Faces\val\madonna')
+# p = (r'D:\computer-vision\Photos\Faces\val\ben_affleck')
+
 for filepath in os.listdir(p):
     img = cv.imread(os.path.join(p, filepath))
     gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
@@ -22,7 +26,7 @@ for filepath in os.listdir(p):
     for (x,y,w,h) in fac_recog:
         face_roi = gray[y:y+h,x:x+w]
         labels, confidence = fac_recognizer.predict(face_roi)
-        print(f'Labels = {people[labels]} with confidence = {confidence}')
+        print(f'Labels = {people[labels]} with a confidence = {int(confidence)} %')
         cv.waitKey(3)
 
 
