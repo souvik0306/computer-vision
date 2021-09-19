@@ -2,7 +2,7 @@
 Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos.
 From the perspective of engineering, it seeks to understand and automate tasks that the human visual system can do
 
-The [`basics.py`](https://github.com/souvik0306/computer-vision/blob/master/basics.py) file contain a few rudimentary OpenCV functions to play around with like - 
+The [`basics.py`](https://github.com/souvik0306/computer-vision/blob/master/basics.py) file contains a few rudimentary OpenCV functions to play around with like - 
 - Rescaling and Resizing Images & Videos
 - BGR Image to Grayscale Conversion
 - Simple Shape Creation
