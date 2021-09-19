@@ -10,6 +10,10 @@ The [`basics.py`](https://github.com/souvik0306/computer-vision/blob/master/basi
 - Canny Image Creation
 - Bluring Images & Videos
 
+Coming to the second part of this repository, I have made a Face Detection module using the [`haar-casacdes`](https://github.com/opencv/opencv/tree/master/data/haarcascades) function. This trained function enables us to detect faces over Images & Videos. 
+
+In the code I have included this feature for both [`Videos`](https://github.com/souvik0306/computer-vision/blob/master/Face%20Detection%20over%20Image.py) and [`Images`](https://github.com/souvik0306/computer-vision/blob/master/Face%20Detection%20over%20Image.py), 
+
 For this following repository I have made use of some amazing resources - 
 
 1. OpenCV Course by freeCodeCamp.org - [YouTube](https://www.youtube.com/watch?v=oXlwWbU8l2o&ab_channel=freeCodeCamp.org)
