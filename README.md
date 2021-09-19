@@ -16,7 +16,7 @@ As per the <a href = #Videos> tutorial</a>, the Image Code was only capable of d
 
 Now the code is capable to iterating over all the images in a directory, saving a lot of time, and prints a subsequent match-percentage as well.
 
-## For this following repository I have made use of some amazing resources - <section id="Videos">
+For this following repository I have made use of some amazing resources - <section id="Videos">
 1. OpenCV Course by freeCodeCamp.org - [YouTube](https://www.youtube.com/watch?v=oXlwWbU8l2o&ab_channel=freeCodeCamp.org)
 2. OpenCV Official Documentation - [Doc](https://docs.opencv.org/4.5.3/)
 3. Jason D'Souza's OpenCV Repository - [GitHub](https://github.com/jasmcaus/opencv-course)
