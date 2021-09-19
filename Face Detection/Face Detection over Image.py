@@ -16,6 +16,7 @@ faces = haar_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)
 for (x,y,w,h) in faces:
     cv.rectangle(new,(x,y),(x+w,y+h),(0,255,0),thickness=2)
 cv.imshow('Final',new)
+cv.imwrite('18 people.jpg',new)
 print(f'Number of faces: {len(faces)}')
 cv.waitKey(0)
 
