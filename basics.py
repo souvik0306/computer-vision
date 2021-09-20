@@ -164,3 +164,33 @@
 # capture.release()
 # capture.destroAllWindows
 
+# import cv2 as cv
+# import numpy as np
+
+# img = cv.imread(r'D:\computer-vision\Photos\street.jpg')
+# width,height = 700,500
+# new = cv.resize(img,(width,height))
+# hsv = cv.cvtColor(new,cv.COLOR_BGR2HSV)
+# cv.imshow('People',hsv)
+# cv.waitKey(0)
+
+# import cv2 as cv
+# import numpy as np
+# img = cv.imread(r'D:\computer-vision\Photos\street.jpg')
+# width,height = 700,500
+# new = cv.resize(img,(width,height))
+# kernel_sharp = np.array([[-1,-1,-1],[-1,9,-1],[-1,-1,-1]])
+# sharpened = cv.filter2D(new,-1,kernel_sharp)
+# cv.imshow('New',sharpened)
+# cv.waitKey(0)
+
+import cv2 as cv
+import numpy as np
+
+img = cv.imread(r'D:\computer-vision\Photos\street.jpg')
+width,height = 700,500
+new = cv.resize(img,(width,height))
+gray = cv.cvtColor(new,cv.COLOR_BGR2GRAY)
+ret,newg = cv.threshold(gray,127,230,cv.THRESH_BINARY)
+cv.imshow('Grayscale',newg)
+cv.waitKey(0)
