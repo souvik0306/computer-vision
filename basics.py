@@ -184,13 +184,51 @@
 # cv.imshow('New',sharpened)
 # cv.waitKey(0)
 
+# import cv2 as cv
+# import numpy as np
+
+# img = cv.imread(r'D:\computer-vision\Photos\street.jpg')
+# width,height = 700,500
+# new = cv.resize(img,(width,height))
+# gray = cv.cvtColor(new,cv.COLOR_BGR2GRAY)
+# ret,newg = cv.threshold(gray,127,230,cv.THRESH_BINARY)
+# cv.imshow('Grayscale',newg)
+# cv.waitKey(0)
+
+
+# import cv2
+# import numpy as np
+
+# filename = r'D:\computer-vision\Photos\shapes.png'
+# new = cv2.imread(filename)
+# width,height = 700,500
+# img = cv2.resize(new,(width,height))
+# gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
+# gray = np.float32(gray)
+# dst = cv2.cornerHarris(gray,2,3,0.04)
+# dst = cv2.dilate(dst,None)
+# img[dst>0.01*dst.max()]=[0,0,255]
+
+# cv2.imshow('dst',img)
+# if cv2.waitKey(0) & 0xff == 27:
+#     cv2.destroyAllWindows()
+
+
 import cv2 as cv
 import numpy as np
-
-img = cv.imread(r'D:\computer-vision\Photos\street.jpg')
-width,height = 700,500
-new = cv.resize(img,(width,height))
-gray = cv.cvtColor(new,cv.COLOR_BGR2GRAY)
-ret,newg = cv.threshold(gray,127,230,cv.THRESH_BINARY)
-cv.imshow('Grayscale',newg)
-cv.waitKey(0)
+capture = cv.VideoCapture(0)
+while True:
+    isTrue, frame = capture.read()
+    gray = cv.cvtColor(frame,cv.COLOR_BGR2GRAY)
+    gray = np.float32(gray)
+    dst = cv.cornerHarris(gray,2,3,0.04)
+#result is dilated for marking the corners, not important
+    dst = cv.dilate(dst,None)
+# Threshold for an optimal value, it may vary depending on the image.
+    frame[dst>0.01*dst.max()]=[0,0,255]
+    cv.imshow('Video', frame)
+    if cv.waitKey(5) & 0xFF == ord('d'):  #d is the kill swich here
+        break
+capture.release()
+capture.destroAllWindows
