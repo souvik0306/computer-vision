@@ -22,3 +22,4 @@ Now the [`code`](https://github.com/souvik0306/computer-vision/blob/master/Face%
 1. OpenCV Course by freeCodeCamp.org - [YouTube](https://www.youtube.com/watch?v=oXlwWbU8l2o&ab_channel=freeCodeCamp.org)
 2. OpenCV Official Documentation - [Doc](https://docs.opencv.org/4.5.3/)
 3. Jason D'Souza's OpenCV Repository - [GitHub](https://github.com/jasmcaus/opencv-course)
+4. AiPhile's Speed & Distance Estimation - [YouTube](https://www.youtube.com/watch?v=DIxcLghsQ4Q&ab_channel=AiPhile)
