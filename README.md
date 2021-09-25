@@ -12,6 +12,11 @@ The [`basics.py`](https://github.com/souvik0306/computer-vision/blob/master/basi
 
 Coming to the second part of this repository, I have made a Face Detection module using the [`haar-casacdes`](https://github.com/opencv/opencv/tree/master/data/haarcascades) function. It is an Object Detection Algorithm used to identify faces in an image or a real time video. In the code I have included this feature for both [Videos](https://github.com/souvik0306/computer-vision/blob/master/Face%20Detection%20over%20Video.py) and [Images](https://github.com/souvik0306/computer-vision/blob/master/Face%20Detection%20over%20Image.py). 
 
+A primary feature of this `haar-cascade` classifier is the **`detectMultiScale`** which takes in three positional arguments as **`ourClassifier.detectMultiScale(input frame, Scale Factor, Min Neighbors)`** - 
+1. ***Input Image / Current Video Frame***
+2. ***Scale Factor*** - Specifies how much we reduce reduce the image each time we scale i.e if Scale Factor is set to 1.3 it signifies the image is scaled down by 30%. Similarly a value closer to 1 will increase the computation time.
+3. ***Min Neighbors*** - Denotes the minimum number of potential neighbors required by each windows to indicate a positive detection. Typically the value ranges between 3~6. Higher values assures lesser false positives, but may miss a few faces at times. 
+
 <img src="https://github.com/souvik0306/computer-vision/blob/master/Photos/18%20people.jpg" width="650" height="450">
 
 As per the <a href = #Videos> tutorial</a>, the Image Code was only capable of detecting faces over a *single image* at a time, so after a bit of tweaking and scrabling through StackOverflow I devised a method to iteratre over all the images in a given folder using the [`os`](https://docs.python.org/3/library/os.html) library. 
