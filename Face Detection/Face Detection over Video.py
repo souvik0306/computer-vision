@@ -8,11 +8,11 @@ while True:
     haar_cascade = cv.CascadeClassifier(r'D:\computer-vision\Face Detection\haar_face.xml')
     faces = haar_cascade.detectMultiScale(gray,scaleFactor=1.1, minNeighbors=5)
     # cv.imshow('Video', gray)
-    if cv.waitKey(5) & 0xFF == ord('d'):  # d is the kill swich here
+    if cv.waitKey(5) & 0xFF == ord('d'):  # d is the kill switch here
         break
     else:
         for (x,y,w,h) in faces:
             cv.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),thickness=2)
             cv.imshow('Final',frame)
 capture.release()
-capture.destroAllWindows
+capture.destroyAllWindows()
