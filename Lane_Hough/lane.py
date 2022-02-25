@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv.imread(r'D:\computer-vision\Photos\road4.jpg')
+img = cv.imread(r'D:\computer-vision\Lane_Hough\lane9.jpg')
 width,height = 700,600
 image = cv.resize(img,(width,height))
 
